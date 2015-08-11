@@ -14,3 +14,8 @@ post('/new_place') do
   place.save()
   redirect('/')
 end
+
+post('/clear') do
+  Place.clear()
+  redirect('/')
+end
