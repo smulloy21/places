@@ -8,4 +8,10 @@ describe(Place) do
       expect(test_place.where()).to(eq("Moscow"))
     end
   end
+
+  describe('.all') do
+    it('returns empty list') do
+      expect(Place.all()).to(eq([]))
+    end
+  end
 end
